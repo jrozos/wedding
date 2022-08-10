@@ -15,16 +15,19 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-uppercase">
                 <li>
-                    <a href="#historia">Nuestra historia</a>
-                </li>
-                <li>
                     <a href="#novios">Novio y Novia</a>
                 </li>
                 <li>
                     <a href="#galeria">Galeria</a>
                 </li>
                 <li>
-                    <a href="#asistencia" class="btn btn-danger btn-fill">Asistencia</a>
+                    <a href="#tema">Temática</a>
+                </li>
+                <li>
+                    <a href="#asistencia">Asistencia</a>
+                </li>
+                <li>
+                    <a href="#mapa">Mapa</a>
                 </li>
             </ul>
         </div>

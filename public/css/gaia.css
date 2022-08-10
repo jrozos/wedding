@@ -23,6 +23,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-size: 100%;
+    background-color: rgba(30, 30, 30, 0.97);
+    color: #fff;
 }
 @media (min-width: 58em) {
     body {
@@ -260,7 +262,13 @@ a:hover {
 
 p.description {
     font-size: 16px;
-    color: #777777;
+    color: #fafdf3;
+    /* color: #777777; */
+}
+ul.description {
+    font-size: 16px;
+    color: #fafdf3;
+    /* color: #777777; */
 }
 
 a:hover,
@@ -357,7 +365,7 @@ body > .navbar-collapse a {
     border: 3px solid #c5a47e;
     border-radius: 50%;
     overflow: hidden;
-    max-width: 110px;
+    max-width: 250px;
     margin: 0 auto;
 }
 .avatar img {
@@ -1038,32 +1046,37 @@ fieldset[disabled] .form-control {
 .section-white {
     background-color: #ffffff;
 }
+.section-black {
+    padding: 50px 0;
+    position: relative;
+    background-color: rgba(30, 30, 30, 0.97);
+}
 
-.section {
+.section .section-black {
     position: relative;
 }
-.section .title-area {
+.section .title-area .section-black {
     max-width: 760px;
     margin: 0 auto 70px;
     display: block;
     padding: 0 15px;
     text-align: center;
 }
-.section .title-area .description {
+.section .title-area .description .section-black {
     font-size: 16px;
     color: #777777;
 }
-.section [class*="col-"] .title-area {
+.section [class*="col-"] .title-area .section-black {
     padding: 0;
 }
-.section .text-area {
+.section .text-area .section-black {
     padding: 4.375em 0;
     position: relative;
     z-index: 3;
     display: block;
 }
-.section .text-area .description,
-.section .text-area .description p {
+.section .text-area .description .section-black,
+.section .text-area .description .section-black p {
     font-size: 16px;
     color: #777777;
 }
@@ -1214,11 +1227,11 @@ fieldset[disabled] .form-control {
     color: #ffffff;
 }
 .filter .separator {
-    color: #ffffff;
+    color: #c5a47e;
 }
 .filter .separator:before,
 .filter .separator:after {
-    border-color: #ffffff;
+    border-color: #c5a47e;
 }
 .filter.filter-color-black:before {
     background: #333;
@@ -1233,7 +1246,8 @@ fieldset[disabled] .form-control {
     background: #008b9c;
 }
 .filter.filter-color-purple:before {
-    background: #50236f;
+    /* background: #50236f; */
+    background: #4b1458;
 }
 .filter.filter-color-red:before {
     background: #de6168;
